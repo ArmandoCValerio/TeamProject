@@ -1,0 +1,5 @@
+http://localhost/teamproject/service/contact?command=GetContactCommand&id=1
+http://localhost/teamproject/service/contact?command=GetContactsCommand
+
+
+http://localhost/bwi2131012/service/todos?command=GetTodoComsmansd&id=1

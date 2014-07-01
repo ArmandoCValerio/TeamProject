@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^contact$ RequestHandler.php?command=GetContactsCommand
+
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^contact/(.+)$ RequestHandler.php?command=GetContactCommand&id=$1
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^contact$ RequestHandler.php?command=CreateContactCommand
+
+RewriteCond %{REQUEST_METHOD} DELETE
+RewriteRule ^contact/(.+)$ RequestHandler.php?command=DeleteContactCommand&id=$1
+
+RewriteCond %{REQUEST_METHOD} PUT
+RewriteRule ^todos/(.+)$ RequestHandler.php?command=UpdateTodoCommand&id=$1

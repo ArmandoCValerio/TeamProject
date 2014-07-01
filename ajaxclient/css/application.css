@@ -1,0 +1,7 @@
+.template, #kontakt_details {
+  display: none;
+}
+
+.kontakt {
+	cursor: pointer;
+}
