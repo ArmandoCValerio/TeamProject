@@ -6,7 +6,7 @@ $.widget("kontakt.kontaktListe",
 	{
 		$.ajax(
 		{
-		   url: "/BIM-WMD-SS-2014-Kontakt/Service/Kontakte",
+		   url: "/teamproject/Service/Kontakte",
 		   //url: "/GitHub/BIM-WMD-SS-2014-Kontakt/Service/Kontakte",
 		   dataType: "json",
 		   success: this._appendKontakte,
